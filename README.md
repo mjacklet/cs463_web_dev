@@ -8,7 +8,5 @@ This repository contains starter files for the lab notebook. It includes exercis
 4. CSS Layout (Flexbox and CSS Grid)
 5. Bootstrap
 6. JavaScript
-7. Async JavaScript
-8. jQuery
-9. Node.js
-10. Debugging
+7. Node.js
+8. Debugging
