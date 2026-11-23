@@ -13,6 +13,11 @@ body {
 
 /* Add your code here */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--pokemon-yellow);
@@ -50,7 +55,6 @@ body {
   background-color: var(--main-light-color);
   width: 220px;
   padding: 20px;
-  border-radius: 12px;
   text-align: center;
 }
 
@@ -59,9 +63,14 @@ body {
 }
 
 .pokemon-card img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
+}
+
+.pokemon-card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 /* Pokemon types */
@@ -75,7 +84,7 @@ body {
 
 .type {
   padding: 5px 12px;
-  border-radius: 20px;
+  margin-top: 15px;
   color: var(--main-color);
   font-size: 13px;
 }

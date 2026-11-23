@@ -70,7 +70,7 @@ function displayPokemons(pokemons) {
     name.textContent = pokemon.name;
 
     const image = document.createElement("img");
-    image.src = pokemon.sprites.front_default;
+    image.src = pokemon.sprites.other["official-artwork"].front_default;
     image.alt = pokemon.name;
 
     const typesContainer = document.createElement("div");
@@ -81,12 +81,13 @@ function displayPokemons(pokemons) {
 
       type.classList.add("type", typeInfo.type.name);
       type.textContent = typeInfo.type.name;
+      type.style.backgroundColor = pokemonColors[typeInfo.type.name];
 
       typesContainer.appendChild(type);
     });
 
-    card.appendChild(image);
     card.appendChild(name);
+    card.appendChild(image);
     card.appendChild(typesContainer);
 
     pokemonContainer.appendChild(card);
