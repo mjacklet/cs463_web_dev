@@ -12,7 +12,7 @@ Use the function expression `sortPokemons` to sort the given list of Pokémons i
 For example:
 
 ```javascript
-console.log(sortPokemons('alphabetically, in ascending order'));
+console.log(sortPokemons("alphabetically, in ascending order"));
 // [
 //   { id: 15, name: 'Beedrill', types: ['Bug', 'Poison'] },
 //   { id: 9, name: 'Blastoise', types: ['Water'] },
@@ -68,22 +68,22 @@ console.log(forEachPokemon());
 Use the function expression `filterPokemons` to return an array of all the Pokémons of that type. The array should be sorted in alphabetical order. Use the array methods `filter()`, `sort()`, and `map()`. The output should be formatted as shown below.
 
 ```javascript
-console.log(filterPokemons('Fire'));
+console.log(filterPokemons("Fire"));
 // [ 'Charizard', 'Charmander', 'Charmeleon' ]
-console.log(filterPokemons('Normal'));
+console.log(filterPokemons("Normal"));
 // [ 'Pidgeot', 'Pidgeotto', 'Pidgey', 'Raticate', 'Rattata' ]
-console.log(filterPokemons('Poison'));
+console.log(filterPokemons("Poison"));
 // [ 'Beedrill', 'Bulbasaur', 'Ivysaur', 'Kakuna', 'Venusaur', 'Weedle' ]
 ```
 
 Use the function expression `searchPokemons` to search based on the name of the Pokémon or its type. Use the array methods `filter()` and `includes()`. The search should be case-insensitive.
 
 ```javascript
-console.log(searchPokemons('Wartortle'));
+console.log(searchPokemons("Wartortle"));
 // [ { id: 8, name: 'Wartortle', types: [ 'Water' ] } ]
-console.log(searchPokemons('pidgey'));
+console.log(searchPokemons("pidgey"));
 // [ { id: 16, name: 'Pidgey', types: [ 'Normal', 'Flying' ] } ]
-console.log(searchPokemons('bug'));
+console.log(searchPokemons("bug"));
 // [
 //   { id: 10, name: 'Caterpie', types: [ 'Bug' ] },
 //   { id: 11, name: 'Metapod', types: [ 'Bug' ] },
@@ -116,13 +116,13 @@ Use the function expression `calculateAge` to calculate someone's age. Below are
 Note: The calculations for this exercise were completed on May 18, 2026.
 
 ```javascript
-console.log(calculateAge('2000-07-01'));
+console.log(calculateAge("2000-07-01"));
 // You are 25 years old
-console.log(calculateAge('1988-05-18'));
+console.log(calculateAge("1988-05-18"));
 // You are 38 years old
-console.log(calculateAge('2190-01-01'));
+console.log(calculateAge("2190-01-01"));
 // Error: You cannot be less than zero years old.
-console.log(calculateAge('1800-01-01'));
+console.log(calculateAge("1800-01-01"));
 // Are you sure you are more than 100 years old?
 console.log(calculateAge(someday));
 // Error: Invalid date format

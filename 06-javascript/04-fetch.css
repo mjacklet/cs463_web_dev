@@ -12,3 +12,104 @@ body {
 }
 
 /* Add your code here */
+
+/* Navbar */
+.navbar {
+  background-color: var(--pokemon-yellow);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  color: var(--main-color);
+  font-size: 28px;
+}
+
+.navbar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+  font-size: 16px;
+}
+
+/* Pokemon container */
+
+#pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+/* Pokemon cards */
+
+.pokemon-card {
+  background-color: var(--main-light-color);
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.pokemon-card:hover {
+  background-color: var(--pokemon-yellow);
+}
+
+.pokemon-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Pokemon types */
+
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.type {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: var(--main-color);
+  font-size: 13px;
+}
+
+/* No results message */
+
+#no-results {
+  text-align: center;
+  font-size: 20px;
+  margin: 30px;
+  color: var(--main-light-color);
+}
+
+/* Loader */
+#loader {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+#loader img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #pokemon-container {
+    padding: 15px;
+  }
+}

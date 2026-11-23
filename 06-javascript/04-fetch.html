@@ -1,16 +1,44 @@
+<! Fetch the first 25 Pokémons in the PokéAPI and append them to the DOM. To append a Pokémon, create a card element that contains the name, image, and type(s). In the navbar, create a search box. Using JavaScript, add classes to center and style all the Pokemons in the container given.
+
+When the user searches for a specific Pokémon, return the appropraite card(s); otherwise, let the user know that nothing matched their query.
+
+Screenshot #1: The screenshot below shows the navbar and a loading gif, to let the user know we are fetching the data they are requesting.
+
+screenshot of the starting file with a spinner gif
+the navbar has a search box on the right and a title on the left that says "Pokedex"
+Screenshot #2: The screenshot below shows how the cards for each Pokémon should be organized on the page and styled.
+
+screenshot of the first 25 Pokémons in the PokéAPI, with images, names, and types for each one
+the cards are in a 4-across grid, with the cards centered in the page and a search box in the navbar
+each card has the pokemon's name, image, and type(s) listed in the card body with a different color highlight corresponding to each type
+Screenshot #3: The screenshot below shows the behavior on hover for each Pokémon card.
+
+screenshot of the hover effect over one of the Pokémon cards. the background color of the card changes to the same yellow as the nav bar
+>
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Exercise 04 - Fetch</title>
+    <link rel="stylesheet" href="04-fetch.css" />
   </head>
   <body>
     <main>
       <nav class="navbar">
         <h1 class="brand-logo">Pokedex</h1>
+        <input type="text" id="search" placeholder="Search Pokemon..." />
       </nav>
       <!-- Use the loader.gif provided in the images/ folder -->
+      <div class="loader">
+        <img src="images/loader.gif" alt="Loading..." />
+      </div>
+
+      <div id="pokemon-container"></div>
+      <p id="no-results"></p>
+
+      <script src="04-fetch.js"></script>
     </main>
   </body>
 </html>
