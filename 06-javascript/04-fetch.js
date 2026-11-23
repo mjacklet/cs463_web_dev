@@ -22,7 +22,7 @@ const pokemonColors = {
 // Add your code here
 const pokemonContainer = document.getElementById("pokemon-container");
 const searchInput = document.getElementById("search");
-const loader = document.querySelector(".loader");
+const loader = document.getElementById("loader");
 const noResults = document.getElementById("no-results");
 
 let allPokemons = [];
