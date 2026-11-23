@@ -101,9 +101,13 @@ body {
 /* Loader */
 #loader {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin: 100px;
+}
+
+#loader figcaption {
+  color: var(--main-light-color);
 }
 
 #loader img {
