@@ -71,7 +71,7 @@ function displayPokemons(pokemons) {
 
     const image = document.createElement("img");
     image.src = pokemon.sprites.other["official-artwork"].front_default;
-    image.alt = pokemon.name;
+    image.alt = pokemon.name + " official artwork";
 
     const typesContainer = document.createElement("div");
     typesContainer.classList.add("types");
